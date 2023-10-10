@@ -1,2 +1,2 @@
-# ast_tree
-AST Program Implementation
+# Ast_tree
+The WhiteHatSchool programming class assignment
