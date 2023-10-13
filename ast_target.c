@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_VALUE 2100000000
 
 
 double add(double a, double b);
@@ -65,22 +68,41 @@ int main(void) {
     return 0;
 }
 
-// 함수 정의
 double add(double a, double b) {
-    return a + b;
+    double result = a + b;
+    if (result > MAX_VALUE) {
+        printf("수가 너무 큽니다.\n");
+        exit(EXIT_FAILURE);
+    }
+    return result;
 }
 
 double subtract(double a, double b) {
-    return a - b;
+    double result = a - b;
+    if (result > MAX_VALUE) {
+        printf("수가 너무 큽니다.\n");
+        exit(EXIT_FAILURE);
+    }
+    return result;
 }
 
 double multiply(double a, double b) {
-    return a * b;
+    double result = a * b;
+    if (result > MAX_VALUE) {
+        printf("수가 너무 큽니다.\n");
+        exit(EXIT_FAILURE);
+    }
+    return result;
 }
 
 double divide(double a, double b) {
     if (b != 0.0) {
-        return a / b;
+        double result = a / b;
+        if (result > MAX_VALUE) {
+            printf("수가 너무 큽니다.\n");
+            exit(EXIT_FAILURE);
+        }
+        return result;
     } else {
         printf("0으로 나눌 수 없습니다.\n");
         return 0.0;
@@ -88,21 +110,46 @@ double divide(double a, double b) {
 }
 
 unsigned int and(unsigned int a, unsigned int b) {
-    return a & b;
+    unsigned int result = a & b;
+    if (result > MAX_VALUE) {
+        printf("수가 너무 큽니다.\n");
+        exit(EXIT_FAILURE);
+    }
+    return result;
 }
 
 unsigned int or(unsigned int a, unsigned int b) {
-    return a | b;
+    unsigned int result = a | b;
+    if (result > MAX_VALUE) {
+        printf("수가 너무 큽니다.\n");
+        exit(EXIT_FAILURE);
+    }
+    return result;
 }
 
 unsigned int xor(unsigned int a, unsigned int b) {
-    return a ^ b;
+    unsigned int result = a ^ b;
+    if (result > MAX_VALUE) {
+        printf("수가 너무 큽니다.\n");
+        exit(EXIT_FAILURE);
+    }
+    return result;
 }
 
 unsigned int left_shift(unsigned int a, unsigned int b) {
-    return a << b;
+    unsigned int result = a << b;
+    if (result > MAX_VALUE) {
+        printf("수가 너무 큽니다.\n");
+        exit(EXIT_FAILURE);
+    }
+    return result;
 }
 
 unsigned int right_shift(unsigned int a, unsigned int b) {
-    return a >> b;
+    unsigned int result = a >> b;
+    if (result > MAX_VALUE) {
+        printf("수가 너무 큽니다.\n");
+        exit(EXIT_FAILURE);
+    }
+    return result;
 }
