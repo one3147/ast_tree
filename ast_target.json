@@ -2288,33 +2288,129 @@
                 "_nodetype": "Compound",
                 "block_items": [
                     {
-                        "_nodetype": "Return",
-                        "coord": "ast_target.c:67:5",
-                        "expr": {
+                        "_nodetype": "Decl",
+                        "align": [],
+                        "bitsize": null,
+                        "coord": "ast_target.c:66:12",
+                        "funcspec": [],
+                        "init": {
                             "_nodetype": "BinaryOp",
-                            "coord": "ast_target.c:67:12",
+                            "coord": "ast_target.c:66:21",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:67:12",
+                                "coord": "ast_target.c:66:21",
                                 "name": "a"
                             },
                             "op": "+",
                             "right": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:67:16",
+                                "coord": "ast_target.c:66:25",
                                 "name": "b"
                             }
+                        },
+                        "name": "result",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "align": null,
+                            "coord": "ast_target.c:66:12",
+                            "declname": "result",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "ast_target.c:66:5",
+                                "names": [
+                                    "double"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:67:9",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:67:9",
+                                "name": "result"
+                            },
+                            "op": ">",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:67:18",
+                                "name": "MAX_VALUE"
+                            }
+                        },
+                        "coord": "ast_target.c:67:5",
+                        "iffalse": null,
+                        "iftrue": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:68:16",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "ast_target.c:68:16",
+                                                "type": "string",
+                                                "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:68:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:68:9",
+                                        "name": "printf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:69:14",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "ID",
+                                                "coord": "ast_target.c:69:14",
+                                                "name": "EXIT_FAILURE"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:69:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:69:9",
+                                        "name": "exit"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:67:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "ast_target.c:71:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "ast_target.c:71:12",
+                            "name": "result"
                         }
                     }
                 ],
-                "coord": "ast_target.c:66:1"
+                "coord": "ast_target.c:65:1"
             },
-            "coord": "ast_target.c:66:8",
+            "coord": "ast_target.c:65:8",
             "decl": {
                 "_nodetype": "Decl",
                 "align": [],
                 "bitsize": null,
-                "coord": "ast_target.c:66:8",
+                "coord": "ast_target.c:65:8",
                 "funcspec": [],
                 "init": null,
                 "name": "add",
@@ -2324,13 +2420,13 @@
                     "_nodetype": "FuncDecl",
                     "args": {
                         "_nodetype": "ParamList",
-                        "coord": "ast_target.c:66:19",
+                        "coord": "ast_target.c:65:19",
                         "params": [
                             {
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:66:19",
+                                "coord": "ast_target.c:65:19",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "a",
@@ -2339,12 +2435,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:66:19",
+                                    "coord": "ast_target.c:65:19",
                                     "declname": "a",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:66:12",
+                                        "coord": "ast_target.c:65:12",
                                         "names": [
                                             "double"
                                         ]
@@ -2355,7 +2451,7 @@
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:66:29",
+                                "coord": "ast_target.c:65:29",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "b",
@@ -2364,12 +2460,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:66:29",
+                                    "coord": "ast_target.c:65:29",
                                     "declname": "b",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:66:22",
+                                        "coord": "ast_target.c:65:22",
                                         "names": [
                                             "double"
                                         ]
@@ -2378,16 +2474,16 @@
                             }
                         ]
                     },
-                    "coord": "ast_target.c:66:8",
+                    "coord": "ast_target.c:65:8",
                     "type": {
                         "_nodetype": "TypeDecl",
                         "align": null,
-                        "coord": "ast_target.c:66:8",
+                        "coord": "ast_target.c:65:8",
                         "declname": "add",
                         "quals": [],
                         "type": {
                             "_nodetype": "IdentifierType",
-                            "coord": "ast_target.c:66:1",
+                            "coord": "ast_target.c:65:1",
                             "names": [
                                 "double"
                             ]
@@ -2403,137 +2499,118 @@
                 "_nodetype": "Compound",
                 "block_items": [
                     {
-                        "_nodetype": "Return",
-                        "coord": "ast_target.c:71:5",
-                        "expr": {
+                        "_nodetype": "Decl",
+                        "align": [],
+                        "bitsize": null,
+                        "coord": "ast_target.c:75:12",
+                        "funcspec": [],
+                        "init": {
                             "_nodetype": "BinaryOp",
-                            "coord": "ast_target.c:71:12",
+                            "coord": "ast_target.c:75:21",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:71:12",
+                                "coord": "ast_target.c:75:21",
                                 "name": "a"
                             },
                             "op": "-",
                             "right": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:71:16",
+                                "coord": "ast_target.c:75:25",
                                 "name": "b"
                             }
-                        }
-                    }
-                ],
-                "coord": "ast_target.c:70:1"
-            },
-            "coord": "ast_target.c:70:8",
-            "decl": {
-                "_nodetype": "Decl",
-                "align": [],
-                "bitsize": null,
-                "coord": "ast_target.c:70:8",
-                "funcspec": [],
-                "init": null,
-                "name": "subtract",
-                "quals": [],
-                "storage": [],
-                "type": {
-                    "_nodetype": "FuncDecl",
-                    "args": {
-                        "_nodetype": "ParamList",
-                        "coord": "ast_target.c:70:24",
-                        "params": [
-                            {
-                                "_nodetype": "Decl",
-                                "align": [],
-                                "bitsize": null,
-                                "coord": "ast_target.c:70:24",
-                                "funcspec": [],
-                                "init": null,
-                                "name": "a",
-                                "quals": [],
-                                "storage": [],
-                                "type": {
-                                    "_nodetype": "TypeDecl",
-                                    "align": null,
-                                    "coord": "ast_target.c:70:24",
-                                    "declname": "a",
-                                    "quals": [],
-                                    "type": {
-                                        "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:70:17",
-                                        "names": [
-                                            "double"
-                                        ]
-                                    }
-                                }
-                            },
-                            {
-                                "_nodetype": "Decl",
-                                "align": [],
-                                "bitsize": null,
-                                "coord": "ast_target.c:70:34",
-                                "funcspec": [],
-                                "init": null,
-                                "name": "b",
-                                "quals": [],
-                                "storage": [],
-                                "type": {
-                                    "_nodetype": "TypeDecl",
-                                    "align": null,
-                                    "coord": "ast_target.c:70:34",
-                                    "declname": "b",
-                                    "quals": [],
-                                    "type": {
-                                        "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:70:27",
-                                        "names": [
-                                            "double"
-                                        ]
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    "coord": "ast_target.c:70:8",
-                    "type": {
-                        "_nodetype": "TypeDecl",
-                        "align": null,
-                        "coord": "ast_target.c:70:8",
-                        "declname": "subtract",
+                        },
+                        "name": "result",
                         "quals": [],
+                        "storage": [],
                         "type": {
-                            "_nodetype": "IdentifierType",
-                            "coord": "ast_target.c:70:1",
-                            "names": [
-                                "double"
-                            ]
-                        }
-                    }
-                }
-            },
-            "param_decls": null
-        },
-        {
-            "_nodetype": "FuncDef",
-            "body": {
-                "_nodetype": "Compound",
-                "block_items": [
-                    {
-                        "_nodetype": "Return",
-                        "coord": "ast_target.c:75:5",
-                        "expr": {
-                            "_nodetype": "BinaryOp",
+                            "_nodetype": "TypeDecl",
+                            "align": null,
                             "coord": "ast_target.c:75:12",
+                            "declname": "result",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "ast_target.c:75:5",
+                                "names": [
+                                    "double"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:76:9",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:75:12",
-                                "name": "a"
+                                "coord": "ast_target.c:76:9",
+                                "name": "result"
                             },
-                            "op": "*",
+                            "op": ">",
                             "right": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:75:16",
-                                "name": "b"
+                                "coord": "ast_target.c:76:18",
+                                "name": "MAX_VALUE"
                             }
+                        },
+                        "coord": "ast_target.c:76:5",
+                        "iffalse": null,
+                        "iftrue": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:77:16",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "ast_target.c:77:16",
+                                                "type": "string",
+                                                "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:77:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:77:9",
+                                        "name": "printf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:78:14",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "ID",
+                                                "coord": "ast_target.c:78:14",
+                                                "name": "EXIT_FAILURE"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:78:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:78:9",
+                                        "name": "exit"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:76:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "ast_target.c:80:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "ast_target.c:80:12",
+                            "name": "result"
                         }
                     }
                 ],
@@ -2547,7 +2624,7 @@
                 "coord": "ast_target.c:74:8",
                 "funcspec": [],
                 "init": null,
-                "name": "multiply",
+                "name": "subtract",
                 "quals": [],
                 "storage": [],
                 "type": {
@@ -2613,7 +2690,7 @@
                         "_nodetype": "TypeDecl",
                         "align": null,
                         "coord": "ast_target.c:74:8",
-                        "declname": "multiply",
+                        "declname": "subtract",
                         "quals": [],
                         "type": {
                             "_nodetype": "IdentifierType",
@@ -2633,112 +2710,145 @@
                 "_nodetype": "Compound",
                 "block_items": [
                     {
+                        "_nodetype": "Decl",
+                        "align": [],
+                        "bitsize": null,
+                        "coord": "ast_target.c:84:12",
+                        "funcspec": [],
+                        "init": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:84:21",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:84:21",
+                                "name": "a"
+                            },
+                            "op": "*",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:84:25",
+                                "name": "b"
+                            }
+                        },
+                        "name": "result",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "align": null,
+                            "coord": "ast_target.c:84:12",
+                            "declname": "result",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "ast_target.c:84:5",
+                                "names": [
+                                    "double"
+                                ]
+                            }
+                        }
+                    },
+                    {
                         "_nodetype": "If",
                         "cond": {
                             "_nodetype": "BinaryOp",
-                            "coord": "ast_target.c:79:9",
+                            "coord": "ast_target.c:85:9",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:79:9",
-                                "name": "b"
+                                "coord": "ast_target.c:85:9",
+                                "name": "result"
                             },
-                            "op": "!=",
+                            "op": ">",
                             "right": {
-                                "_nodetype": "Constant",
-                                "coord": "ast_target.c:79:14",
-                                "type": "double",
-                                "value": "0.0"
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:85:18",
+                                "name": "MAX_VALUE"
                             }
                         },
-                        "coord": "ast_target.c:79:5",
-                        "iffalse": {
+                        "coord": "ast_target.c:85:5",
+                        "iffalse": null,
+                        "iftrue": {
                             "_nodetype": "Compound",
                             "block_items": [
                                 {
                                     "_nodetype": "FuncCall",
                                     "args": {
                                         "_nodetype": "ExprList",
-                                        "coord": "ast_target.c:82:16",
+                                        "coord": "ast_target.c:86:16",
                                         "exprs": [
                                             {
                                                 "_nodetype": "Constant",
-                                                "coord": "ast_target.c:82:16",
+                                                "coord": "ast_target.c:86:16",
                                                 "type": "string",
-                                                "value": "\"0\uc73c\ub85c \ub098\ub20c \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.\\n\""
+                                                "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
                                             }
                                         ]
                                     },
-                                    "coord": "ast_target.c:82:9",
+                                    "coord": "ast_target.c:86:9",
                                     "name": {
                                         "_nodetype": "ID",
-                                        "coord": "ast_target.c:82:9",
+                                        "coord": "ast_target.c:86:9",
                                         "name": "printf"
                                     }
                                 },
                                 {
-                                    "_nodetype": "Return",
-                                    "coord": "ast_target.c:83:9",
-                                    "expr": {
-                                        "_nodetype": "Constant",
-                                        "coord": "ast_target.c:83:16",
-                                        "type": "double",
-                                        "value": "0.0"
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:87:14",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "ID",
+                                                "coord": "ast_target.c:87:14",
+                                                "name": "EXIT_FAILURE"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:87:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:87:9",
+                                        "name": "exit"
                                     }
                                 }
                             ],
-                            "coord": "ast_target.c:81:1"
-                        },
-                        "iftrue": {
-                            "_nodetype": "Compound",
-                            "block_items": [
-                                {
-                                    "_nodetype": "Return",
-                                    "coord": "ast_target.c:80:9",
-                                    "expr": {
-                                        "_nodetype": "BinaryOp",
-                                        "coord": "ast_target.c:80:16",
-                                        "left": {
-                                            "_nodetype": "ID",
-                                            "coord": "ast_target.c:80:16",
-                                            "name": "a"
-                                        },
-                                        "op": "/",
-                                        "right": {
-                                            "_nodetype": "ID",
-                                            "coord": "ast_target.c:80:20",
-                                            "name": "b"
-                                        }
-                                    }
-                                }
-                            ],
-                            "coord": "ast_target.c:79:1"
+                            "coord": "ast_target.c:85:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "ast_target.c:89:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "ast_target.c:89:12",
+                            "name": "result"
                         }
                     }
                 ],
-                "coord": "ast_target.c:78:1"
+                "coord": "ast_target.c:83:1"
             },
-            "coord": "ast_target.c:78:8",
+            "coord": "ast_target.c:83:8",
             "decl": {
                 "_nodetype": "Decl",
                 "align": [],
                 "bitsize": null,
-                "coord": "ast_target.c:78:8",
+                "coord": "ast_target.c:83:8",
                 "funcspec": [],
                 "init": null,
-                "name": "divide",
+                "name": "multiply",
                 "quals": [],
                 "storage": [],
                 "type": {
                     "_nodetype": "FuncDecl",
                     "args": {
                         "_nodetype": "ParamList",
-                        "coord": "ast_target.c:78:22",
+                        "coord": "ast_target.c:83:24",
                         "params": [
                             {
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:78:22",
+                                "coord": "ast_target.c:83:24",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "a",
@@ -2747,12 +2857,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:78:22",
+                                    "coord": "ast_target.c:83:24",
                                     "declname": "a",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:78:15",
+                                        "coord": "ast_target.c:83:17",
                                         "names": [
                                             "double"
                                         ]
@@ -2763,7 +2873,7 @@
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:78:32",
+                                "coord": "ast_target.c:83:34",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "b",
@@ -2772,12 +2882,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:78:32",
+                                    "coord": "ast_target.c:83:34",
                                     "declname": "b",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:78:25",
+                                        "coord": "ast_target.c:83:27",
                                         "names": [
                                             "double"
                                         ]
@@ -2786,16 +2896,16 @@
                             }
                         ]
                     },
-                    "coord": "ast_target.c:78:8",
+                    "coord": "ast_target.c:83:8",
                     "type": {
                         "_nodetype": "TypeDecl",
                         "align": null,
-                        "coord": "ast_target.c:78:8",
-                        "declname": "divide",
+                        "coord": "ast_target.c:83:8",
+                        "declname": "multiply",
                         "quals": [],
                         "type": {
                             "_nodetype": "IdentifierType",
-                            "coord": "ast_target.c:78:1",
+                            "coord": "ast_target.c:83:1",
                             "names": [
                                 "double"
                             ]
@@ -2811,33 +2921,404 @@
                 "_nodetype": "Compound",
                 "block_items": [
                     {
-                        "_nodetype": "Return",
-                        "coord": "ast_target.c:88:5",
-                        "expr": {
+                        "_nodetype": "If",
+                        "cond": {
                             "_nodetype": "BinaryOp",
-                            "coord": "ast_target.c:88:12",
+                            "coord": "ast_target.c:93:9",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:88:12",
+                                "coord": "ast_target.c:93:9",
+                                "name": "b"
+                            },
+                            "op": "!=",
+                            "right": {
+                                "_nodetype": "Constant",
+                                "coord": "ast_target.c:93:14",
+                                "type": "double",
+                                "value": "0.0"
+                            }
+                        },
+                        "coord": "ast_target.c:93:5",
+                        "iffalse": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:101:16",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "ast_target.c:101:16",
+                                                "type": "string",
+                                                "value": "\"0\uc73c\ub85c \ub098\ub20c \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.\\n\""
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:101:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:101:9",
+                                        "name": "printf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "Return",
+                                    "coord": "ast_target.c:102:9",
+                                    "expr": {
+                                        "_nodetype": "Constant",
+                                        "coord": "ast_target.c:102:16",
+                                        "type": "double",
+                                        "value": "0.0"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:100:1"
+                        },
+                        "iftrue": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "Decl",
+                                    "align": [],
+                                    "bitsize": null,
+                                    "coord": "ast_target.c:94:16",
+                                    "funcspec": [],
+                                    "init": {
+                                        "_nodetype": "BinaryOp",
+                                        "coord": "ast_target.c:94:25",
+                                        "left": {
+                                            "_nodetype": "ID",
+                                            "coord": "ast_target.c:94:25",
+                                            "name": "a"
+                                        },
+                                        "op": "/",
+                                        "right": {
+                                            "_nodetype": "ID",
+                                            "coord": "ast_target.c:94:29",
+                                            "name": "b"
+                                        }
+                                    },
+                                    "name": "result",
+                                    "quals": [],
+                                    "storage": [],
+                                    "type": {
+                                        "_nodetype": "TypeDecl",
+                                        "align": null,
+                                        "coord": "ast_target.c:94:16",
+                                        "declname": "result",
+                                        "quals": [],
+                                        "type": {
+                                            "_nodetype": "IdentifierType",
+                                            "coord": "ast_target.c:94:9",
+                                            "names": [
+                                                "double"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "_nodetype": "If",
+                                    "cond": {
+                                        "_nodetype": "BinaryOp",
+                                        "coord": "ast_target.c:95:13",
+                                        "left": {
+                                            "_nodetype": "ID",
+                                            "coord": "ast_target.c:95:13",
+                                            "name": "result"
+                                        },
+                                        "op": ">",
+                                        "right": {
+                                            "_nodetype": "ID",
+                                            "coord": "ast_target.c:95:22",
+                                            "name": "MAX_VALUE"
+                                        }
+                                    },
+                                    "coord": "ast_target.c:95:9",
+                                    "iffalse": null,
+                                    "iftrue": {
+                                        "_nodetype": "Compound",
+                                        "block_items": [
+                                            {
+                                                "_nodetype": "FuncCall",
+                                                "args": {
+                                                    "_nodetype": "ExprList",
+                                                    "coord": "ast_target.c:96:20",
+                                                    "exprs": [
+                                                        {
+                                                            "_nodetype": "Constant",
+                                                            "coord": "ast_target.c:96:20",
+                                                            "type": "string",
+                                                            "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
+                                                        }
+                                                    ]
+                                                },
+                                                "coord": "ast_target.c:96:13",
+                                                "name": {
+                                                    "_nodetype": "ID",
+                                                    "coord": "ast_target.c:96:13",
+                                                    "name": "printf"
+                                                }
+                                            },
+                                            {
+                                                "_nodetype": "FuncCall",
+                                                "args": {
+                                                    "_nodetype": "ExprList",
+                                                    "coord": "ast_target.c:97:18",
+                                                    "exprs": [
+                                                        {
+                                                            "_nodetype": "ID",
+                                                            "coord": "ast_target.c:97:18",
+                                                            "name": "EXIT_FAILURE"
+                                                        }
+                                                    ]
+                                                },
+                                                "coord": "ast_target.c:97:13",
+                                                "name": {
+                                                    "_nodetype": "ID",
+                                                    "coord": "ast_target.c:97:13",
+                                                    "name": "exit"
+                                                }
+                                            }
+                                        ],
+                                        "coord": "ast_target.c:95:1"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "Return",
+                                    "coord": "ast_target.c:99:9",
+                                    "expr": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:99:16",
+                                        "name": "result"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:93:1"
+                        }
+                    }
+                ],
+                "coord": "ast_target.c:92:1"
+            },
+            "coord": "ast_target.c:92:8",
+            "decl": {
+                "_nodetype": "Decl",
+                "align": [],
+                "bitsize": null,
+                "coord": "ast_target.c:92:8",
+                "funcspec": [],
+                "init": null,
+                "name": "divide",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": {
+                        "_nodetype": "ParamList",
+                        "coord": "ast_target.c:92:22",
+                        "params": [
+                            {
+                                "_nodetype": "Decl",
+                                "align": [],
+                                "bitsize": null,
+                                "coord": "ast_target.c:92:22",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "a",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "align": null,
+                                    "coord": "ast_target.c:92:22",
+                                    "declname": "a",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "ast_target.c:92:15",
+                                        "names": [
+                                            "double"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "align": [],
+                                "bitsize": null,
+                                "coord": "ast_target.c:92:32",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "b",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "align": null,
+                                    "coord": "ast_target.c:92:32",
+                                    "declname": "b",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "ast_target.c:92:25",
+                                        "names": [
+                                            "double"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "coord": "ast_target.c:92:8",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "align": null,
+                        "coord": "ast_target.c:92:8",
+                        "declname": "divide",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "ast_target.c:92:1",
+                            "names": [
+                                "double"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "Decl",
+                        "align": [],
+                        "bitsize": null,
+                        "coord": "ast_target.c:107:18",
+                        "funcspec": [],
+                        "init": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:107:27",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:107:27",
                                 "name": "a"
                             },
                             "op": "&",
                             "right": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:88:16",
+                                "coord": "ast_target.c:107:31",
                                 "name": "b"
                             }
+                        },
+                        "name": "result",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "align": null,
+                            "coord": "ast_target.c:107:18",
+                            "declname": "result",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "ast_target.c:107:5",
+                                "names": [
+                                    "unsigned",
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:108:9",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:108:9",
+                                "name": "result"
+                            },
+                            "op": ">",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:108:18",
+                                "name": "MAX_VALUE"
+                            }
+                        },
+                        "coord": "ast_target.c:108:5",
+                        "iffalse": null,
+                        "iftrue": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:109:16",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "ast_target.c:109:16",
+                                                "type": "string",
+                                                "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:109:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:109:9",
+                                        "name": "printf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:110:14",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "ID",
+                                                "coord": "ast_target.c:110:14",
+                                                "name": "EXIT_FAILURE"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:110:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:110:9",
+                                        "name": "exit"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:108:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "ast_target.c:112:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "ast_target.c:112:12",
+                            "name": "result"
                         }
                     }
                 ],
-                "coord": "ast_target.c:87:1"
+                "coord": "ast_target.c:106:1"
             },
-            "coord": "ast_target.c:87:14",
+            "coord": "ast_target.c:106:14",
             "decl": {
                 "_nodetype": "Decl",
                 "align": [],
                 "bitsize": null,
-                "coord": "ast_target.c:87:14",
+                "coord": "ast_target.c:106:14",
                 "funcspec": [],
                 "init": null,
                 "name": "and",
@@ -2847,13 +3328,13 @@
                     "_nodetype": "FuncDecl",
                     "args": {
                         "_nodetype": "ParamList",
-                        "coord": "ast_target.c:87:31",
+                        "coord": "ast_target.c:106:31",
                         "params": [
                             {
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:87:31",
+                                "coord": "ast_target.c:106:31",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "a",
@@ -2862,12 +3343,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:87:31",
+                                    "coord": "ast_target.c:106:31",
                                     "declname": "a",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:87:18",
+                                        "coord": "ast_target.c:106:18",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -2879,7 +3360,7 @@
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:87:47",
+                                "coord": "ast_target.c:106:47",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "b",
@@ -2888,12 +3369,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:87:47",
+                                    "coord": "ast_target.c:106:47",
                                     "declname": "b",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:87:34",
+                                        "coord": "ast_target.c:106:34",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -2903,16 +3384,16 @@
                             }
                         ]
                     },
-                    "coord": "ast_target.c:87:14",
+                    "coord": "ast_target.c:106:14",
                     "type": {
                         "_nodetype": "TypeDecl",
                         "align": null,
-                        "coord": "ast_target.c:87:14",
+                        "coord": "ast_target.c:106:14",
                         "declname": "and",
                         "quals": [],
                         "type": {
                             "_nodetype": "IdentifierType",
-                            "coord": "ast_target.c:87:1",
+                            "coord": "ast_target.c:106:1",
                             "names": [
                                 "unsigned",
                                 "int"
@@ -2929,33 +3410,130 @@
                 "_nodetype": "Compound",
                 "block_items": [
                     {
-                        "_nodetype": "Return",
-                        "coord": "ast_target.c:92:5",
-                        "expr": {
+                        "_nodetype": "Decl",
+                        "align": [],
+                        "bitsize": null,
+                        "coord": "ast_target.c:116:18",
+                        "funcspec": [],
+                        "init": {
                             "_nodetype": "BinaryOp",
-                            "coord": "ast_target.c:92:12",
+                            "coord": "ast_target.c:116:27",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:92:12",
+                                "coord": "ast_target.c:116:27",
                                 "name": "a"
                             },
                             "op": "|",
                             "right": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:92:16",
+                                "coord": "ast_target.c:116:31",
                                 "name": "b"
                             }
+                        },
+                        "name": "result",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "align": null,
+                            "coord": "ast_target.c:116:18",
+                            "declname": "result",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "ast_target.c:116:5",
+                                "names": [
+                                    "unsigned",
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:117:9",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:117:9",
+                                "name": "result"
+                            },
+                            "op": ">",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:117:18",
+                                "name": "MAX_VALUE"
+                            }
+                        },
+                        "coord": "ast_target.c:117:5",
+                        "iffalse": null,
+                        "iftrue": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:118:16",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "ast_target.c:118:16",
+                                                "type": "string",
+                                                "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:118:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:118:9",
+                                        "name": "printf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:119:14",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "ID",
+                                                "coord": "ast_target.c:119:14",
+                                                "name": "EXIT_FAILURE"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:119:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:119:9",
+                                        "name": "exit"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:117:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "ast_target.c:121:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "ast_target.c:121:12",
+                            "name": "result"
                         }
                     }
                 ],
-                "coord": "ast_target.c:91:1"
+                "coord": "ast_target.c:115:1"
             },
-            "coord": "ast_target.c:91:14",
+            "coord": "ast_target.c:115:14",
             "decl": {
                 "_nodetype": "Decl",
                 "align": [],
                 "bitsize": null,
-                "coord": "ast_target.c:91:14",
+                "coord": "ast_target.c:115:14",
                 "funcspec": [],
                 "init": null,
                 "name": "or",
@@ -2965,13 +3543,13 @@
                     "_nodetype": "FuncDecl",
                     "args": {
                         "_nodetype": "ParamList",
-                        "coord": "ast_target.c:91:30",
+                        "coord": "ast_target.c:115:30",
                         "params": [
                             {
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:91:30",
+                                "coord": "ast_target.c:115:30",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "a",
@@ -2980,12 +3558,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:91:30",
+                                    "coord": "ast_target.c:115:30",
                                     "declname": "a",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:91:17",
+                                        "coord": "ast_target.c:115:17",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -2997,7 +3575,7 @@
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:91:46",
+                                "coord": "ast_target.c:115:46",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "b",
@@ -3006,12 +3584,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:91:46",
+                                    "coord": "ast_target.c:115:46",
                                     "declname": "b",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:91:33",
+                                        "coord": "ast_target.c:115:33",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -3021,16 +3599,16 @@
                             }
                         ]
                     },
-                    "coord": "ast_target.c:91:14",
+                    "coord": "ast_target.c:115:14",
                     "type": {
                         "_nodetype": "TypeDecl",
                         "align": null,
-                        "coord": "ast_target.c:91:14",
+                        "coord": "ast_target.c:115:14",
                         "declname": "or",
                         "quals": [],
                         "type": {
                             "_nodetype": "IdentifierType",
-                            "coord": "ast_target.c:91:1",
+                            "coord": "ast_target.c:115:1",
                             "names": [
                                 "unsigned",
                                 "int"
@@ -3047,33 +3625,130 @@
                 "_nodetype": "Compound",
                 "block_items": [
                     {
-                        "_nodetype": "Return",
-                        "coord": "ast_target.c:96:5",
-                        "expr": {
+                        "_nodetype": "Decl",
+                        "align": [],
+                        "bitsize": null,
+                        "coord": "ast_target.c:125:18",
+                        "funcspec": [],
+                        "init": {
                             "_nodetype": "BinaryOp",
-                            "coord": "ast_target.c:96:12",
+                            "coord": "ast_target.c:125:27",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:96:12",
+                                "coord": "ast_target.c:125:27",
                                 "name": "a"
                             },
                             "op": "^",
                             "right": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:96:16",
+                                "coord": "ast_target.c:125:31",
                                 "name": "b"
                             }
+                        },
+                        "name": "result",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "align": null,
+                            "coord": "ast_target.c:125:18",
+                            "declname": "result",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "ast_target.c:125:5",
+                                "names": [
+                                    "unsigned",
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:126:9",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:126:9",
+                                "name": "result"
+                            },
+                            "op": ">",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:126:18",
+                                "name": "MAX_VALUE"
+                            }
+                        },
+                        "coord": "ast_target.c:126:5",
+                        "iffalse": null,
+                        "iftrue": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:127:16",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "ast_target.c:127:16",
+                                                "type": "string",
+                                                "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:127:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:127:9",
+                                        "name": "printf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:128:14",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "ID",
+                                                "coord": "ast_target.c:128:14",
+                                                "name": "EXIT_FAILURE"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:128:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:128:9",
+                                        "name": "exit"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:126:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "ast_target.c:130:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "ast_target.c:130:12",
+                            "name": "result"
                         }
                     }
                 ],
-                "coord": "ast_target.c:95:1"
+                "coord": "ast_target.c:124:1"
             },
-            "coord": "ast_target.c:95:14",
+            "coord": "ast_target.c:124:14",
             "decl": {
                 "_nodetype": "Decl",
                 "align": [],
                 "bitsize": null,
-                "coord": "ast_target.c:95:14",
+                "coord": "ast_target.c:124:14",
                 "funcspec": [],
                 "init": null,
                 "name": "xor",
@@ -3083,13 +3758,13 @@
                     "_nodetype": "FuncDecl",
                     "args": {
                         "_nodetype": "ParamList",
-                        "coord": "ast_target.c:95:31",
+                        "coord": "ast_target.c:124:31",
                         "params": [
                             {
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:95:31",
+                                "coord": "ast_target.c:124:31",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "a",
@@ -3098,12 +3773,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:95:31",
+                                    "coord": "ast_target.c:124:31",
                                     "declname": "a",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:95:18",
+                                        "coord": "ast_target.c:124:18",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -3115,7 +3790,7 @@
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:95:47",
+                                "coord": "ast_target.c:124:47",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "b",
@@ -3124,12 +3799,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:95:47",
+                                    "coord": "ast_target.c:124:47",
                                     "declname": "b",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:95:34",
+                                        "coord": "ast_target.c:124:34",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -3139,16 +3814,16 @@
                             }
                         ]
                     },
-                    "coord": "ast_target.c:95:14",
+                    "coord": "ast_target.c:124:14",
                     "type": {
                         "_nodetype": "TypeDecl",
                         "align": null,
-                        "coord": "ast_target.c:95:14",
+                        "coord": "ast_target.c:124:14",
                         "declname": "xor",
                         "quals": [],
                         "type": {
                             "_nodetype": "IdentifierType",
-                            "coord": "ast_target.c:95:1",
+                            "coord": "ast_target.c:124:1",
                             "names": [
                                 "unsigned",
                                 "int"
@@ -3165,33 +3840,130 @@
                 "_nodetype": "Compound",
                 "block_items": [
                     {
-                        "_nodetype": "Return",
-                        "coord": "ast_target.c:100:5",
-                        "expr": {
+                        "_nodetype": "Decl",
+                        "align": [],
+                        "bitsize": null,
+                        "coord": "ast_target.c:134:18",
+                        "funcspec": [],
+                        "init": {
                             "_nodetype": "BinaryOp",
-                            "coord": "ast_target.c:100:12",
+                            "coord": "ast_target.c:134:27",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:100:12",
+                                "coord": "ast_target.c:134:27",
                                 "name": "a"
                             },
                             "op": "<<",
                             "right": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:100:17",
+                                "coord": "ast_target.c:134:32",
                                 "name": "b"
                             }
+                        },
+                        "name": "result",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "align": null,
+                            "coord": "ast_target.c:134:18",
+                            "declname": "result",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "ast_target.c:134:5",
+                                "names": [
+                                    "unsigned",
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:135:9",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:135:9",
+                                "name": "result"
+                            },
+                            "op": ">",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:135:18",
+                                "name": "MAX_VALUE"
+                            }
+                        },
+                        "coord": "ast_target.c:135:5",
+                        "iffalse": null,
+                        "iftrue": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:136:16",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "ast_target.c:136:16",
+                                                "type": "string",
+                                                "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:136:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:136:9",
+                                        "name": "printf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:137:14",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "ID",
+                                                "coord": "ast_target.c:137:14",
+                                                "name": "EXIT_FAILURE"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:137:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:137:9",
+                                        "name": "exit"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:135:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "ast_target.c:139:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "ast_target.c:139:12",
+                            "name": "result"
                         }
                     }
                 ],
-                "coord": "ast_target.c:99:1"
+                "coord": "ast_target.c:133:1"
             },
-            "coord": "ast_target.c:99:14",
+            "coord": "ast_target.c:133:14",
             "decl": {
                 "_nodetype": "Decl",
                 "align": [],
                 "bitsize": null,
-                "coord": "ast_target.c:99:14",
+                "coord": "ast_target.c:133:14",
                 "funcspec": [],
                 "init": null,
                 "name": "left_shift",
@@ -3201,13 +3973,13 @@
                     "_nodetype": "FuncDecl",
                     "args": {
                         "_nodetype": "ParamList",
-                        "coord": "ast_target.c:99:38",
+                        "coord": "ast_target.c:133:38",
                         "params": [
                             {
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:99:38",
+                                "coord": "ast_target.c:133:38",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "a",
@@ -3216,12 +3988,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:99:38",
+                                    "coord": "ast_target.c:133:38",
                                     "declname": "a",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:99:25",
+                                        "coord": "ast_target.c:133:25",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -3233,7 +4005,7 @@
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:99:54",
+                                "coord": "ast_target.c:133:54",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "b",
@@ -3242,12 +4014,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:99:54",
+                                    "coord": "ast_target.c:133:54",
                                     "declname": "b",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:99:41",
+                                        "coord": "ast_target.c:133:41",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -3257,16 +4029,16 @@
                             }
                         ]
                     },
-                    "coord": "ast_target.c:99:14",
+                    "coord": "ast_target.c:133:14",
                     "type": {
                         "_nodetype": "TypeDecl",
                         "align": null,
-                        "coord": "ast_target.c:99:14",
+                        "coord": "ast_target.c:133:14",
                         "declname": "left_shift",
                         "quals": [],
                         "type": {
                             "_nodetype": "IdentifierType",
-                            "coord": "ast_target.c:99:1",
+                            "coord": "ast_target.c:133:1",
                             "names": [
                                 "unsigned",
                                 "int"
@@ -3283,33 +4055,130 @@
                 "_nodetype": "Compound",
                 "block_items": [
                     {
-                        "_nodetype": "Return",
-                        "coord": "ast_target.c:104:5",
-                        "expr": {
+                        "_nodetype": "Decl",
+                        "align": [],
+                        "bitsize": null,
+                        "coord": "ast_target.c:143:18",
+                        "funcspec": [],
+                        "init": {
                             "_nodetype": "BinaryOp",
-                            "coord": "ast_target.c:104:12",
+                            "coord": "ast_target.c:143:27",
                             "left": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:104:12",
+                                "coord": "ast_target.c:143:27",
                                 "name": "a"
                             },
                             "op": ">>",
                             "right": {
                                 "_nodetype": "ID",
-                                "coord": "ast_target.c:104:17",
+                                "coord": "ast_target.c:143:32",
                                 "name": "b"
                             }
+                        },
+                        "name": "result",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "align": null,
+                            "coord": "ast_target.c:143:18",
+                            "declname": "result",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "ast_target.c:143:5",
+                                "names": [
+                                    "unsigned",
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "ast_target.c:144:9",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:144:9",
+                                "name": "result"
+                            },
+                            "op": ">",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "ast_target.c:144:18",
+                                "name": "MAX_VALUE"
+                            }
+                        },
+                        "coord": "ast_target.c:144:5",
+                        "iffalse": null,
+                        "iftrue": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:145:16",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "ast_target.c:145:16",
+                                                "type": "string",
+                                                "value": "\"\uc218\uac00 \ub108\ubb34 \ud07d\ub2c8\ub2e4.\\n\""
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:145:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:145:9",
+                                        "name": "printf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "ast_target.c:146:14",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "ID",
+                                                "coord": "ast_target.c:146:14",
+                                                "name": "EXIT_FAILURE"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "ast_target.c:146:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "ast_target.c:146:9",
+                                        "name": "exit"
+                                    }
+                                }
+                            ],
+                            "coord": "ast_target.c:144:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "ast_target.c:148:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "ast_target.c:148:12",
+                            "name": "result"
                         }
                     }
                 ],
-                "coord": "ast_target.c:103:1"
+                "coord": "ast_target.c:142:1"
             },
-            "coord": "ast_target.c:103:14",
+            "coord": "ast_target.c:142:14",
             "decl": {
                 "_nodetype": "Decl",
                 "align": [],
                 "bitsize": null,
-                "coord": "ast_target.c:103:14",
+                "coord": "ast_target.c:142:14",
                 "funcspec": [],
                 "init": null,
                 "name": "right_shift",
@@ -3319,13 +4188,13 @@
                     "_nodetype": "FuncDecl",
                     "args": {
                         "_nodetype": "ParamList",
-                        "coord": "ast_target.c:103:39",
+                        "coord": "ast_target.c:142:39",
                         "params": [
                             {
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:103:39",
+                                "coord": "ast_target.c:142:39",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "a",
@@ -3334,12 +4203,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:103:39",
+                                    "coord": "ast_target.c:142:39",
                                     "declname": "a",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:103:26",
+                                        "coord": "ast_target.c:142:26",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -3351,7 +4220,7 @@
                                 "_nodetype": "Decl",
                                 "align": [],
                                 "bitsize": null,
-                                "coord": "ast_target.c:103:55",
+                                "coord": "ast_target.c:142:55",
                                 "funcspec": [],
                                 "init": null,
                                 "name": "b",
@@ -3360,12 +4229,12 @@
                                 "type": {
                                     "_nodetype": "TypeDecl",
                                     "align": null,
-                                    "coord": "ast_target.c:103:55",
+                                    "coord": "ast_target.c:142:55",
                                     "declname": "b",
                                     "quals": [],
                                     "type": {
                                         "_nodetype": "IdentifierType",
-                                        "coord": "ast_target.c:103:42",
+                                        "coord": "ast_target.c:142:42",
                                         "names": [
                                             "unsigned",
                                             "int"
@@ -3375,16 +4244,16 @@
                             }
                         ]
                     },
-                    "coord": "ast_target.c:103:14",
+                    "coord": "ast_target.c:142:14",
                     "type": {
                         "_nodetype": "TypeDecl",
                         "align": null,
-                        "coord": "ast_target.c:103:14",
+                        "coord": "ast_target.c:142:14",
                         "declname": "right_shift",
                         "quals": [],
                         "type": {
                             "_nodetype": "IdentifierType",
-                            "coord": "ast_target.c:103:1",
+                            "coord": "ast_target.c:142:1",
                             "names": [
                                 "unsigned",
                                 "int"
